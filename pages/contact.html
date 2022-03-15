@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono pequeño de la pagina -->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Puntero</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo del emprendimiento -->
+        <img src="../img/Logo.png" alt="Logo" class="logo">
+        <div>
+            <!-- Menu de Navegacion -->
+            <nav class="nav">
+                <ul class="nav__links">
+                    <a class="nav__link" href="../index.html">Inicio</a>
+                    <a class="nav__link" href="./topics.html">Temas</a>
+                    <a class="nav__link" href="./authors.html">Autores</a>
+                    <a class="nav__link" href="./ideas.html">Ideas</a>
+                    <a class="nav__link--activo" href="./contact.html">Contacto</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <br>
+        <form action="" method="get" class="form__contact">
+            <div class="form__contact__name">
+                <label for="nombre">¿Cuál es tu nombre?</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+            </div>
+            <div class="form__contact__correo">
+                <label for="correo">¿Cuál es tu correo?</label>
+                <input type="email" name="correo" id="correo" autocomplete="email" required>
+            </div>
+            <div class="form__contact__country">
+                <label for="pais">¿En cuál país vives?</label>
+                <input type="text" name="pais" id="pais" autocomplete="country" required>
+            </div>
+            <div class="form__contact__pc">
+                <label for="cp">¿Cuál es tu código postal?</label>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+            </div>
+            <div class="form__contact__send">
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <!-- Creador de la pagina -->
+        <h4>Creador: Ricardo Lorenzi</h4>
+    </footer>
+</body>
+
+</html>

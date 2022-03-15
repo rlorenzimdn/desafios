@@ -1,0 +1,270 @@
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #C85C5C;
+  height: 40px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+
+.nav__links {
+  background-color: #F9975D;
+  padding: 10px;
+  border: solid #B2EA70 3px;
+}
+
+.nav__link--activo{
+  font-weight: bold;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-size: 20px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.grid {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+
+.grid > div,
+.grid .heading,
+.grid .content,
+.grid .sidebar,
+.grid .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.grid .heading {
+	/* background: #12203E; */
+	color: #fff;
+	grid-area: header;
+}
+
+.grid .content {
+	grid-area: contenido;
+}
+
+.grid .sidebar {
+	grid-column: 3 / 4;
+	background: #fAA43D;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.grid .widget-1,
+.grid .widget-2 {
+	background: #55a8fd;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid .widget-1 {
+	grid-area: widget-1;
+
+}
+
+.widget-1:hover {
+	color: orange;
+	transform: skewY(20deg);
+	animation-delay: 3s;
+  }
+
+.widget-2 {
+	grid-area: widget-2;
+}
+
+.widget-2:hover {
+	display: block;
+  }
+
+
+.grid .footer {
+	background: #12203E;
+	color: #fff;
+	grid-area: footer;
+}
+
+/* Estilos Pagina Autores */
+
+.columns {
+    box-sizing: content-box;
+}
+
+.columns__left {
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    column-gap: 40px;
+}
+
+.columns__right {
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+/* Estilos Pagina Contacto */
+
+.form__contact {
+    display: table;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid brown;
+    box-sizing: border-box;
+}
+
+.form__contact__name {
+    right: 100px;
+}
+
+.form__contact__send {
+    float: right;
+}
+
+
+/* Estilos Pagina Ideas */
+
+.table {
+    box-sizing: content-box;
+}
+
+.table__left {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid green;
+    box-sizing: border-box;
+    column-gap: 40px;
+}
+
+.table__center {
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid yellow;
+    box-sizing: border-box;
+}
+
+.table__right {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid violet;
+    box-sizing: border-box;
+}
+
+/* Estilos Pagina de Temas */
+/* Usando Flex */
+
+.nav__topics {
+    display: flex;
+    flex-direction: column;
+    background-color: #C85C5C;
+    height: 40px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav__topics__links {
+    background-color: #F9975D;
+    padding: 5px;
+    border: solid #B2EA70 3px;
+}
+
+.box__theme__topics {
+    width: 1000px;
+    height: 300px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.title__theme__topics {
+    margin-left: 10px;
+}
+
+.paragraph__theme__topics {
+    width: 980px;
+    height: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+	.grid {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+}
