@@ -9,36 +9,29 @@
 .logo {
     width: 150px;
     height: auto;
-    padding: 10px;
-    margin: 10px;
+    padding: 0px;
+    margin: 5px;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: #C85C5C;
+    background-color: #F9975D;
     height: 30px;
-    padding: 10px;
     list-style: none;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-end;
 }
 
-.nav__links {
+.nav-link {
     background-color: #F9975D;
-    height: 40px;
-    padding: 5px;
-    /* padding: 10px; */
-    border: solid #B2EA70 3px;
+    height: 30px;
+    /* padding: 5px; */
+    border: solid #89f70b 1px;
 }
 
-.nav__link--activo {
-    height: 40px;
-    font-weight: bold;
-}
-
-body {
+.body {
     background: #E9ECF4;
     color: #000;
     font-size: 20px;
